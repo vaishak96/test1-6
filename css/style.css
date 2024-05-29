@@ -1,0 +1,27 @@
+#chart-area {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logo {
+    height: 50px;
+}
+
+.navbar-brand {
+    height: 60px;
+    padding: 5px 0px;
+}
+
+#chart-area,
+#legend {
+    flex: 1 1 50%;
+    min-width: 300px; /* Ensure both elements have a minimum width */
+}
+
+@media (max-width: 768px) {
+    #chart-area,
+    #legend {
+        flex: 1 1 100%; /* Stack elements vertically on small screens */
+    }
+}
